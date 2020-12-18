@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>ADMIN</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://kit.fontawesome.com/c0fc838bea.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!---Nav bar-->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <button class="navbar-toggler ml-auto mb-2 bg-light" type="button" data-toggle="collapse" data-target="#navbar">
+<span class="navbar-toggler-icon"></span>
+
+</button>
+        <div class="collapse navbar-collapse" id="navbar">
+            <div class="container-fluid">
+                <div class="row">
+                    <!---Sidebar-->
+                    <div class=" col-xl-2 col-lg-3 col-md-4 sidebar fixed-top">
+                        <a href="#" class="navbar-brand text-white d-block
+                mx-auto text-center py-3 mb-4" style="font-size: 32px; font-family:cursive;"><i class="fa fa-paper-plane text-light fa-6"> Bhramann</i></a>
+
+                        <ul class="navbar-nav flex-column mt-4">
+                            <li class="nav-item"><a href="index.php" class="nav-link text-white p-3 mb-2
+                    sidebar-link"><i class="fas fa-home text-light fa-lg mr-3"></i>
+                Dashboard</a></li>
+                            <li class="nav-item"><a href="change-password.php" class="nav-link text-white p-3 mb-2
+                    sidebar-link"><i class="fas fa-user text-light fa-lg mr-3"></i>
+                Profile</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2
+                    current"><i class="fas fa-briefcase text-light fa-lg mr-3"></i>
+                Tour Packages</a></li>
+                            <li class="nav-item"><a href="manage-user.html" class="nav-link text-white p-3 mb-2
+                    sidebar-link"><i class="fas fa-users text-light fa-lg mr-3"></i>
+                Manage Users</a></li>
+                            <li class="nav-item"><a href="booking.html" class="nav-link text-white p-3 mb-2
+                    sidebar-link"><i class="fas fa-book text-light fa-lg mr-3"></i>
+                Manage Booking</a></li>
+                            <li class="nav-item"><a href="issues.html" class="nav-link text-white p-3 mb-2
+                    sidebar-link"><i class="fa fa-folder-open text-light fa-lg mr-3"></i>
+                Manage Issues</a></li>
+
+
+                    </div>
+                    <!---end of side bar-->
+                    <!---Top Nav-->
+                    <div class="col-xl-10 col-lg-9 col-md-8 ml-auto top-bar fixed-top py-2 top-nav">
+                        <div class="row align-item-center">
+                            <div class="col-md-4">
+                                <h4 class="text-light text-uppercase mb-0">ADMIN PANEL</h4>
+                            </div>
+                            <div class="col-md-5">
+                                <h4 style="color:white">WELCOME &nbsp;ADMINISTRATOR</h4>
+                            </div>
+                            <div class="col-md-3">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item icon-parent">
+                                        <a href="#" class="nav-link icon-bullet">
+                                            <i class="fas fa-comments text-light fa-lg"></i></a>
+                                        <li class="nav-item icon-parent">
+                                            <a href="#" class="nav-link icon-bullet">
+                                                <i class="fas fa-bell text-light fa-lg"></i></a>
+
+                                            <li class="nav-item ml-md-auto">
+                                                <a href="#" class="nav-link" data-toggle="modal" data-target="#sign-out">
+                                                    <i class="fas fa-sign-out-alt text-danger fa-lg"></i></a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!---End of Top Nav-->
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!----End of Navbar-->
+    <!---Modal-->
+    <div class="modal" id="sign-out">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Signout</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    press the button
+                </div>
+                <div class="modal-footer">
+                    <a href="http://localhost/Bhramann-main/admin/login.php"><button type="button" class="btn btn-success">
+                    Leave </button></a>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">
+                    Cancel    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---End of Modal-->
+
+
+    <!-- tables -->
+
+
+
+    <!--table-->
+
+
+
+
+
+    <div class="row mb-5" style="width:290%;height:250%; margin-left:20%;margin-top:4%">
+        <div class="col-xl-6 col-12">
+
+            <div class="container-fluid">
+                <div class="row mb-5">
+                    <div class="col-xl-12 col-lg-10 col-md-8 ml-auto">
+                        <div class="row align-items-center">
+                            <div class="col-xl-6 col-12 mb-4 mb-xl-0">
+                                <h3 class="text-dark text-center mb-3">
+                                    Manage Packages
+                                </h3> <br>
+                                <table class="table table-striped bg-light text-center">
+                                    <thead>
+                                        <tr class="text-dark">
+
+                                            <th>Sr No.</th>
+                                            <th>PacakgeName</th>
+                                            <th>Type</th>
+                                            <th>Location</th>
+                                            <th>Price</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+
+                                            <td>1</td>
+                                            <td>Weekend Trip To Shimla</td>
+                                            <td>General</td>
+                                            <td>Shimla-Manali-Chandigarh</td>
+                                            <td>5,444</td>
+
+                                        </tr>
+                                        <tr>
+
+                                            <td>2</td>
+                                            <td>Dazzling Darjeeling</td>
+                                            <td>Deluxe</td>
+                                            <td>Darjeeling</td>
+                                            <td>8,999</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th>3</th>
+                                            <td>Trip To Goa</td>
+                                            <td>General</td>
+                                            <td>Anjuna Beach, Goa</td>
+                                            <td>6,000</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th>4</th>
+                                            <td>The Pink City</td>
+                                            <td>Deluxe</td>
+                                            <td>Jaipur, Rajasthan</td>
+                                            <td>5,000</td>
+
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
+                                <nav class="color">
+                                    <ul class="pagination justify-content-center">
+                                        <li class="page-item">
+                                            <a href="#" class="page-link py-2 px-3">
+                                                <span>&laquo;</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item active">
+                                            <a href="#" class="page-link py-2 px-3">
+                                         1
+                                     </a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a href="#" class="page-link py-2 px-3">
+                                             2
+                                         </a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a href="#" class="page-link py-2 px-3">
+                                                 3
+                                             </a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a href="#" class="page-link py-2 px-3">
+                                                <span>&raquo;</span>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </nav>
+                                <!--  <nav>
+                <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                        <a href="#" class="page-link py-2 px-3">
+                            <span>Previous</span>
+                        </a>
+                    </li>
+                    <li class="page-item active">
+                         <a href="#" class="page-link py-2 px-3">
+                             1
+                         </a>
+                     </li>
+                     <li class="page-item">
+                             <a href="#" class="page-link py-2 px-3">
+                                 2
+                             </a>
+                         </li>
+                         <li class="page-item">
+                                 <a href="#" class="page-link py-2 px-3">
+                                     3
+                                 </a>
+                             </li>
+                    <li class="page-item">
+                         <a href="#" class="page-link py-2 px-3">
+                             <span>Next</span>
+                         </a>
+                     </li>
+
+                </ul>
+            </nav>-->
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+            <!--End of table-->
+
+
+
+
+
+
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

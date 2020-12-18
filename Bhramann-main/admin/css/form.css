@@ -1,0 +1,137 @@
+* {
+    background-color: olivedrab;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-olivedrab,
+.btn-olivedrab {
+    background-color: olivedrab !important;
+}
+
+.text-olivedrab {
+    color: olivedrab !important;
+}
+
+.carousel .carousel-indicators li {
+    width: 30px;
+    height: 5px;
+    border-radius: 0%;
+}
+
+.carousel-caption {
+    bottom: 200px;
+}
+
+.k {
+    margin-right: 0% !important;
+}
+
+
+/*.booking-form-box
+     {
+        max-width: 350px;
+        border :  1px solid #ced4da;
+        margin : 10% auto 0;
+    }
+    .radio-btn{
+        margin: 0 20px;
+    }
+    .radio-btn .btn{
+        margin: 20px 10px 20px 0px;
+        box-shadow: none;
+    }
+    .radio-btn .btn::after{
+        content: '';
+        height: 15px;
+        width: -15px;
+        top: -2px;
+        left: -1px;
+        background-color: aqua;
+        display: inline-block;
+        border: 3px solid #fff;
+        border-radius: 50%;
+
+    }
+    .radio-btn .btn:checked::after
+    {
+        content: '';
+        background-color: blue;
+        transition: 0.5s;
+
+    }
+    .radio-btn span{
+        color: cornflowerblue;
+        margin-right: 5px;
+        font-size: 12px;
+
+    }
+    .booking-form{
+        padding: 0 20px 20px;
+
+    }
+    .booking-form label{
+        margin-bottom: 5px;
+        margin-top: 10px;
+        font-size: 12px;
+        color:#fff;
+
+    }
+    input::placeholder{
+        color:#ffff;
+    }*/
+
+h1 {
+    font-size: 44p;
+    color: darked;
+    padding: 20px;
+}
+
+input {
+    border-radius: 10px;
+    width: 250px;
+    height: 35px;
+    text-indent: 5px;
+    padding: 30px;
+}
+
+input:focus {
+    outline: none;
+}
+
+fieldset {
+    width: 50%;
+    height: 700vh;
+    background-color: darkgreen;
+    border-radius: 5px;
+    outline: darksalmon;
+    padding: 30px;
+}
+
+table {
+    font-size: 22px;
+}
+
+td {
+    line-height: 50px;
+}
+
+input[type="submit"] {
+    width: 120px;
+    height: 30px;
+    background-color: darkseagreen;
+}
+
+input[type="submit"]:hover {
+    background-color: darkturquoise;
+}
+
+input[type="reset"] {
+    width: 120px;
+    height: 30px;
+    background-color: darkseagreen;
+}
+
+input[type="reset"]:hover {
+    background-color: darkturquoise;
+}

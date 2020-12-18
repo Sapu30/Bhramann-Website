@@ -1,0 +1,247 @@
+/*===Package Section===*/
+
+.package {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 2%;
+}
+
+.package:after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 46%;
+    content: " ";
+}
+
+.package .package-1 {
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width:576px) {
+    .package .package-1 {
+        margin-bottom: 200px;
+    }
+}
+
+.package .package-1 .package-text {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 245px;
+    height: 245px;
+    background: lightsteelblue;
+    padding: 35px 22px;
+    box-shadow: 0px 0px 0px 10px rgba(2, 3, 63, 0.5);
+    margin: 6px;
+}
+
+@media(max-width:576px) {
+    .package .package-1 .package-text {
+        top: 50%;
+    }
+}
+
+.package .package-1 .package-text p {
+    color: Black;
+    margin-top: 0px;
+    text-align: center;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.package .package-1 .package-text .btn-package {
+    margin-top: 30px;
+}
+
+.btn-package {
+    background: olivedrab;
+    color: #fff;
+    margin-left: 20%;
+}
+
+
+/**Contact Section**/
+
+#contact-section {
+    background: linear-gradient(rgba(0, 0, 0.6), rgba(0, 0, 0, 0.9), url(../imgs/contact.jpeg));
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 2%;
+    margin: auto;
+    text-align: center;
+}
+
+#contact-section .container h1 {
+    text-align: center;
+    text-decoration: underline;
+    text-underline-position: under;
+    color: black;
+    margin-top: 3%;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+#contact-section .container p {
+    text-align: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 3%;
+    color: white;
+    letter-spacing: 3px;
+}
+
+.contact-form i.fa {
+    font-size: 18px;
+    padding: 1.5%;
+    background-color: none;
+    margin: auto;
+    border-radius: 80%;
+    cursor: pointer;
+    border: 2px solid rgb(190, 190, 190);
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.contact-form i.fa:hover {
+    cursor: pointer;
+    border: 2px solid #fff;
+    color: olivedrab;
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 50px;
+}
+
+.form-info {
+    font-size: 16px;
+    font-style: italic;
+    color: black;
+    letter-spacing: 2px;
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+    width: 80%;
+    background-color: rgba(136, 133, 133, 0.5);
+    color: #fff;
+    border: none;
+    outline: none;
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+textarea {
+    padding: 10px;
+    margin: 10px;
+    width: 80%;
+    background-color: rgba(136, 133, 133, 0.5);
+    color: #fff;
+    border: none;
+    outline: none;
+}
+
+textarea::placeholder {
+    color: #fff;
+}
+
+.submit {
+    width: 42%;
+    background: none;
+    padding: 4px;
+    outline: none;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 3%;
+    border: 2px solid rgb(190, 190, 190);
+    color: black;
+    display: inline;
+}
+
+.submit:hover {
+    border: 1px solid #fff;
+    color: olivedrab;
+    cursor: pointer;
+}
+
+
+/*media queries */
+
+@media(max-width:768px) {
+    #contact-section .contact-form {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    #contact-section .submit {
+        width: 60%;
+    }
+}
+
+
+/**Galley Section**/
+
+.rows {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    margin-left: 15%;
+    margin-right: 7%;
+}
+
+
+/* Create four equal columns that sits next to each other */
+
+.column {
+    flex: 25%;
+    max-width: 30%;
+    max-height: 20%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    padding: 4px;
+    transition: 1s;
+    filter: grayscale(10%);
+}
+
+.column img:hover {
+    filter: grayscale(0);
+    transform: scale(1.2);
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}

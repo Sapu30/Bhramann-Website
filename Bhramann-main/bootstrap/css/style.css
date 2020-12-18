@@ -1,0 +1,23 @@
+ .bg-olivedrab , .btn-olivedrab{
+     background-color:  olivedrab !important;
+ }
+
+ .text-olivedrab{
+     color: olivedrab !important;
+ }
+
+
+ .carousel .carousel-indicators li {
+     width: 30px;
+     height: 5px;
+     border-radius: 0%;
+ }
+
+ .carousel-caption{
+     bottom: 200px;
+     
+ }
+  
+   .k{
+       margin-right: 0% !important;
+   }

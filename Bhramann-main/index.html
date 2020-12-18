@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <!--bootsttrap css files-->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+    <link rel="stylesheet" href="bootstrap/css/font-awesome-5.8.1.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="style1.css">
+    <title>Bhramann</title>
+</head>
+
+<body>
+
+    <!--navigation bar-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-olivedrab">
+        <div class="container">
+            <a href="index.html" class="navbar-brand"> <i class="fa fa-paper-plane fa-2x text-teal" style="color: white;"> </i> <i style="font-size: 30px"> Bhramann </i></a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#travel-navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <div class="collapse navbar-collapse" id="travel-navbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item px-3 animated zoomIn delay-1s">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item px-3 animated zoomIn delay-1s">
+                        <a href="#Destination" class="nav-link">Destinations</a>
+                    </li>
+                    <li class="nav-item px-3 animated zoomIn delay-1s">
+                        <a href="#Gallery" class="nav-link">Gallery</a>
+                    </li>
+                    <li class="nav-item px-3 animated zoomIn delay-1s">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li> &nbsp; </ul>
+
+                <ul><button type="button" class="btn btn-outline-white btn-text-white  pull-right" style="font-weight:bold; width: 100%; margin-top: 12px; ">
+                    <li class="logged-in" style="display: none;">
+                        <a href="#" class="white-text modal-trigger" data-target="modal-account">Account / </a>
+                    
+                    
+                        <a href="#" class="white-text" id="logout"> Logout</a>
+                    </li>
+
+
+                    <li class="logged-out" style="display: none;">
+                        <a href="#" class="white-text modal-trigger" data-target="modal-login">Login / </a>
+                    
+                        <a href="#" class="white-text modal-trigger" data-target="modal-signup"> Sign up</a>
+                    </li> 
+
+
+                </ul></button>
+
+
+
+                    <div class="k active"> &nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-outline-white btn-text-white  pull-right" style="margin-top: -1px;"><i class="fa fa-user fa-2" ></i> <a href="admin/login.php"><b style="color: white">Admin</b></a></button></div>
+
+            </div>
+        </div>
+
+    </nav>
+
+
+    <!--slider section-->
+    <section>
+        <div class="carousel slide" id="travel-slider" data-ride="carousel">
+
+            <ol class="carousel-indicators">
+                <li data-target="#travel-slider" data-slide-to="0" class="active"></li>
+                <li data-target="#travel-slider" data-slide-to="1"></li>
+                <li data-target="#travel-slider" data-slide-to="2"></li>
+            </ol>
+
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/slider_one.jpg" alt="" class="img-fluid w-100">
+                    <div class="carousel-caption animated zoomIn delay-1s">
+                        <h5 class="display-4"> Symbol Of Love</h5>
+                        <h2>Taj Mahal is a white marble mausoleum built by Mughal Emperor, Shah Jahan in the year 1653. It is built in the loving memory of Mumtaz Mahal, wife of Emperor Shah Jahan.
+                        </h2>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/slider_two.jpg" alt="" class="img-fluid w-100">
+                    <div class="carousel-caption animated zoomIn delay-1s">
+                        <h5 class="display-4"> Leh Ladakh</h5>
+                        <h1>You’re off to Great Places! Today is your day! Your mountain is waiting, So…get on your way!
+                        </h1>>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/slider_three.jpg" alt="" class="img-fluid w-100">
+                    <div class="carousel-caption animated   zoomIn delay-1s">
+                        <h5 class="display-4"> The Golden sand</h5>
+                        <h3>Land of Maharajas’, is seemingly one of the most Instagrammable places in India. Rows of majestic forts and palaces, centuries-old architecture, colourful façades, scenic lakes, rugged landscapes, lively festivals and culture,
+                            lip-smacking traditional cuisine, golden sunsets and sand dunes – this largest state of India is brimming with a vibrancy that will leave you clicking that shutter non-stop.
+                        </h3>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!--it will controll the next and previous of slider images-->
+            <a class="carousel-control-prev" href="#travel-slider" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#travel-slider" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+
+        </div>
+    </section>
+
+    <!--Search section-->
+
+    <section class="p-3">
+
+
+        <div class="container bg-olivedrab text-white">
+
+            <div class="row">
+                <div class="col">
+                    <center>
+                        <h5 class="display-4"><a name="Destination"><b><i class="fa fa-hotel fa-0.1x" ></i> Search . Book . Stay</b></a></h5>
+                    </center>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light p-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card text-center mt-3">
+                        <div class="card-body">
+                            <i class="fa fa-location-arrow fa-4x text-teal"></i>
+                            <p class="h2">Popular Pcakages</p>
+                            <p>DIRECTED TO THE PACKAGES.</p>
+
+                            <button class="btn btn-light-olivedrabe btn-lg">
+                            <div>
+                            <a href="#pack">VIEW</a>
+                            </div>
+                        </button> </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center mt-3">
+                        <div class="card-body">
+                            <i class="fa fa-building fa-4x text-teal"></i>
+                            <p class="h2">Choose the Hotel</p>
+                            <p>DIRECTED TO THE HOTEL FORM.</p>
+
+                            <button class="btn btn-light-olivedrabe btn-lg">
+                            <div>
+                            <a href="rooms/hotel.html">SEARCH</a>
+                            </div>
+                        </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center  mt-3">
+                        <div class="card-body">
+                            <i class="fa fa-paper-plane fa-4x text-olivedrabe"></i>
+                            <p class="h2">Fly High</p>
+                            <p>CHOOSE YOUR TRANSPORT</p>
+
+                            <button class="btn btn-light-olivedrabe btn-lg">
+                            <div>
+                            <a href="https://www.ixigo.com">Book </a>
+                            </div>
+                        </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Popular Places -->
+    <section id="places" class="p-3">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col">
+                    <h5 class="display-4">
+                        <span class="text-teal">Popular</span> Places
+                    </h5>
+                    <p class="lead">Popular Places people like to travel!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mt-3">
+                        <img src="images/card_one.jpeg" class="img-fluid  rounded" alt="">
+                        <div class="card-body">
+                            <h3 class="card-title">Charminar, Hyderabad</h3>
+                            <p class="card-text">The Charminar is a monument and mosque in Hyderabad, India.The Charminar is also a sign of numerous beliefs living at a solitary place. The joining together of the airs of both i.e. the Mecca Masjid Mosque and Bhagyalakshmi
+                                temple fetch into an image of the social as well as religious synchronization of the Hyderabad city.
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mt-3">
+                        <img src="images/card_two.jpeg" class="img-fluid rounded" alt="">
+                        <div class="card-body">
+                            <h3 class="card-title">Lotus Temple, Delhi</h3>
+                            <p class="card-text"> The Lotus Temple is also known as Baha’i House of Worship. Baha’i faith believes that their centers of worship are for all religions. Thus, visitors of any religion are allowed at the Lotus Temple. More than 10,000 different
+                                sizes of marble were used in the construction of the Lotus Temple.
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mt-3">
+                        <img src="images/card_three.jpg" class="img-fluid rounded" alt="">
+                        <div class="card-body">
+                            <h3 class="card-title">Kumarakom, Kerala</h3>
+                            <p class="card-text">Kumarakom is a village on Vembanand Lake in the backwaters of Kerala, southern India. It's laced with canals, where houseboats ply the waters. In the lake, Pathiramanal Island is a haven for rare migratory birds. If you are
+                                a nature lover then you shouldn't miss out on this one.Best time to visit here is from September to March as weather is pleasent.
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col text-center">
+                    <button class="btn btn-dark btn-lg">
+                        <div>
+                        <a href="http://localhost/Bhramann-main/rooms/hotel.html">Book your room</a>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Package Section-->
+    <section class="package section-padding mt-3 bg-light p-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-5">
+                    <div class="section-title text-center">
+                        <div class="col">
+                            <h5 class="display-4">
+                                <span class="text-teal"><a name="pack">Tour</a> </span>Packages
+                            </h5>
+                            <p class="lead">You may also like!</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-xl-6">
+                    <div class="package-1">
+                        <img src="images/pack1.jpg" class="img-fluid" alt="">
+                        <div class="package-text">
+                            <p><b>Weekend Trip to Shimla</b><br>05 Nights/06 Days Shimla-Manikarn-Chandigarh <br> Includes: Room & Meals <br> Rs. 5,444 per person</p>
+                            <a href="http://localhost/Bhramann-main/book/book.html" class="btn-package p-2">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+
+                <div class="col-md-6 col-xl-6">
+
+                    <div class="package-1">
+
+                        <img src="images/pack2.jpg" class="img-fluid" alt="">
+                        <div class="package-text">
+                            <p><b>Dazzling Darjeeling</b><br>03 Nights/04 Days Deluxe Tour <br> Includes: Room & Meals <br> Rs. 8,999 per person</p>
+                            <a href="http://localhost/Bhramann-main/book/book.html" class="btn-package p-2">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <div class="row">
+                <div class="col-md-6 col-xl-6">
+                    <div class="package-1">
+                        <img src="images/goa.jpg" class="img-fluid" alt="" style="height:305px; width:600px;">
+                        <div class="package-text">
+                            <p><b>Trip To Goa</b><br>03 Nights/04 Days Anjuna Beach, Goa <br> Includes: Room & Meals <br> Rs. 6,000 per person</p>
+                            <a href="http://localhost/Bhramann-main/book/book.html" class="btn-package p-2">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+
+                <div class="col-md-6 col-xl-6">
+
+                    <div class="package-1">
+
+                        <img src="images/raj.jpg" class="img-fluid" alt="" style="height:305px; width:600px;">
+                        <div class="package-text">
+                            <p><b>The Pink City </b><br>02 Nights/01 Days Jaipur Deluxe Tour<br> Includes: Room & Meals <br> Rs. 5,000per person</p>
+                            <a href="http://localhost/Bhramann-main/book/book.html" class="btn-package p-2">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!--Gallery-->
+    <section class="p-3">
+
+
+        <div class="container bg-olivedrab text-white">
+
+            <div class="row">
+                <div class="col">
+                    <center>
+                        <h5 class="display-4">
+                            <a name="Gallery"></a><b>Photo Gallery</b></a>
+                        </h5>
+                    </center>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light p4">
+        <div class="rows">
+            <div class="column">
+                <a href="images/gallary_one.jpg" data-lightbox="mygallery"><img src="images/gallary_one.jpg"></a>
+                <a href="images/gallary_two.jpg" data-lightbox="mygallery"><img src="images/gallary_two.jpg"></a>
+                <a href="images/gallary_nine.jpg" data-lightbox="mygallery"><img src="images/gallary_nine.jpg" style="height: 35%;"></a>
+
+            </div>
+            <div class="column">
+                <a href="images/gallary_four.jpg" data-lightbox="mygallery"><img src="images/gallary_four.jpg" style="height:49%;"></a>
+                <a href="images/gallary_three.jpg" data-lightbox="mygallery"><img src="images/gallary_three.jpg" style="height:48%;"></a>
+
+
+            </div>
+            <div class="column">
+                <a href="images/gallary_six.jpg" data-lightbox="mygallery"><img src="images/gallary_six.jpg"></a>
+                <a href="images/gallary_seven.jpg" data-lightbox="mygallery"><img src="images/gallary_seven.jpg"></a>
+                <a href="images/gallary_eleven.jpg" data-lightbox="mygallery"><img src="images/gallary_eleven.jpg" style="height: 35%;"></a>
+
+            </div>
+        </div>
+        <center><button class="btn btn-dark btn-lg">
+            <div>
+            <a href="http://localhost/Bhramann-main/gallery/gallary.html">View More</a>
+            </div>
+        </button>
+            <center>
+
+                </div>
+    </section><br>
+
+    <!--Contact Section-->
+
+    <section id="contact-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-5">
+                    <div class="section-title text-center">
+                        <div class="col">
+                            <h5 class="display-4">
+                                <span class="text-teal"><a name="contact">Contact</a></span> Us
+                            </h5>
+                            <p class="lead" style="color: black;">Keep upto date!</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <!--first grid section-->
+                <div>
+
+                    <br>
+                    <figure class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109740.86108784036!2d76.69348820329913!3d30.735210199731227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed0be66ec96b%3A0xa5ff67f9527319fe!2sChandigarh%2C%20India!5e0!3m2!1sen!2sus!4v1607421020220!5m2!1sen!2sus"
+                            width="300" height="160" frameborder="2" style="border:2;" aria-hidden="false" tabindex="2"></iframe>
+
+                    </figure>
+
+                    <i class="fa fa-map-marker"></i><span class="form-info"> Address: <br>#321 The Bhramann,<br>Chandigarh</span><br><br>
+                    <i class="fa fa-phone"></i><span class="form-info"> Phone: <br>+91 9876543210</span><br><br>
+                    <i class="fa fa-envelope"></i><span class="form-info"> Email: <br>wsite015@gmail.com</span>
+
+
+                </div>
+                <!--second grid section-->
+                <form action="http://localhost/Bhramann-main/contact.php">
+
+                    <input type="text" name="fname" placeholder="First Name" required>
+                    <input type="text" name="lname" placeholder="Last Name" required>
+                    <input type="text" name="email" placeholder="Email" required>
+                    <input type="text" name="sub" placeholder="Subject" required>
+                    <textarea name="message" placeholder="Message" rows="5" id="" required></textarea>
+                    <button class="submit"> Send Message</button>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+    <!-- Main Footer -->
+    <footer class="p-3 mt-1 bg-olivedrab text-white text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <i class="fab fa-facebook-square fa-2x m-3"></i>
+                    <i class="fab fa-youtube fa-2x m-3"></i>
+                    <i class="fab fa-twitter fa-2x m-3"></i>
+                    <i class="fab fa-google-plus-square fa-2x m-3"></i>
+                    <h3>Copyright &copy; 2020 , BHRAMANN</h3>
+                    <h6>All Rights Reserved</h6>
+                    <h6>Developed & Maintained by Team BHRAMANN</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <!--bootstrap js files-->
+    <script src="bootstrap/js/jquery.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="bootstrap/js/mdb.js"></script>
+
+    <script>
+        $('.carousel').carousel({
+            interval: 2000,
+            pause: 'hover'
+        });
+    </script>
+
+
+
+
+    <!-- SIGN UP MODAL -->
+    <div id="modal-signup" class="modal">
+        <center>
+            <div class="modal-content" style="width:50%;">
+                <h4>Sign up</h4><br />
+                <center>
+                    <form id="signup-form" style="width:50%; height:30%">
+
+                        <div class="input-field">
+                            <input type="email" id="signup-email" placeholder="Email address" required />
+
+                        </div>
+                        <div class="input-field">
+                            <input type="password" id="signup-password" placeholder="Choose Password" required />
+
+                        </div>
+                </center>
+                <button class="btn yellow darken-2 z-depth-0" id="signup-button">Sign up</button>
+                </form>
+            </div>
+        </center>
+    </div>
+
+    <!-- LOGIN MODAL -->
+    <div id="modal-login" class="modal">
+        <center>
+            <div class="modal-content" style="width:50%;">
+                <h4>Login</h4><br />
+                <center>
+                    <form id="login-form" style="width:50%; height:30%">
+                        <div class="input-field">
+                            <input type="email" id="login-email" placeholder="Email address" required />
+
+                        </div>
+                        <div class="input-field">
+                            <input type="password" id="login-password" placeholder="Your Password" required />
+
+                        </div>
+                </center>
+                <button class="btn yellow darken-2 z-depth-0">Login</button>
+                </form>
+            </div>
+        </center>
+    </div>
+
+    <!-- ACCOUNT MODAL -->
+    <div id="modal-account" class="modal">
+        <center>
+            <div class="modal-content center-align" style="width:50%;">
+                <h4>Account details</h4><br />
+                <div class="account-details"></div>
+            </div>
+        </center>
+    </div>
+
+    <!-- CREATE GUIDE MODAL -->
+    <div id="modal-create" class="modal">
+        <div class="modal-content" style="width:50%;">
+            <h4>Give Review</h4><br />
+            <form id="create-form">
+                <div class="input-field">
+                    <input type="text" id="title" required>
+                    <label for="title">Destination</label>
+                </div>
+                <div class="input-field">
+                    <textarea id="content" class="materialize-textarea" required></textarea>
+                    <label for="content">Review</label>
+                </div>
+                <button class="btn yellow darken-2 z-depth-0">Create</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- GUIDE LIST -->
+    <div class="container" style="margin-top: 20px; height:1%">
+        <ul class="collapsible z-depth-0 guides" style="border: none;">
+
+        </ul>
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-firestore.js"></script>
+
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyCM5yyYpz1t__UXFF_ZKOd8fNuKwrvDD0g",
+            authDomain: "travelsite-b5e44.firebaseapp.com",
+            projectId: "travelsite-b5e44",
+            storageBucket: "travelsite-b5e44.appspot.com",
+            messagingSenderId: "349028857987",
+            appId: "1:349028857987:web:3fecb4bcdfe2f3769743b6",
+            measurementId: "G-5VQ6KVL6JD"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+
+
+        //make auth and firestore refrences
+        const auth = firebase.auth();
+        const db = firebase.firestore();
+
+        //update firestore settings
+        db.settings({
+            timestampsInSnapshots: true
+        });
+    </script>
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="scripts/auth.js"></script>
+    <script src="scripts/index.js"></script>
+
+
+
+
+</body>
+
+</html>

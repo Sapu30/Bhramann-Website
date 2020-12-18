@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+
+/*nav bar*/
+
+.sidebar {
+    height: 100vh;
+    background-color: olivedrab;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: black;
+}
+
+.bottom-border {
+    border-bottom: 5px dotted white;
+}
+
+.sidebar-link {
+    transition: all .4s;
+}
+
+.sidebar-link:hover {
+    background-color: black;
+    border-radius: 5px;
+}
+
+.current {
+    background-color: black;
+    border-radius: 8px;
+    box-shadow: 2px 5px 5px white;
+    transition: all .3s;
+}
+
+.current:hover {
+    background-color: black;
+    border-radius: 8px;
+    box-shadow: 2px 5px 5px white;
+    transform: translateY(-1px);
+}
+
+.top-bar {
+    background-color: olivedrab;
+}
+
+
+/*input:placeholder {
+    color: white;
+    opacity: 1;
+}*/
+
+.icon-parent {
+    position: relative;
+}
+
+.icon-bullet ::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 15px;
+    height: 12px;
+    width: 12px;
+    background-color: #B71C1C;
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        position: static;
+        height: auto;
+    }
+    .top-nav {
+        position: static;
+    }
+}
+
+
+/*Cards*/
+
+.card-common {
+    box-shadow: 1px 2px 5px gray;
+    transition: all .4s;
+}
+
+.card-common:hover {
+    box-shadow: 2px 3px 15px gray;
+    transform: translateY(-1px);
+}
+
+
+/*End of cards*/
+
+.table-color {
+    background: #DCEDC8;
+}
+
+.bg-progress {
+    background: #C5E1A5;
+}
+
+.page-item {
+    color: #7CB342;
+}
+
+.page-link {
+    color: #7CB342;
+}
+
+.page-item.active .page-link {
+    background-color: #7CB342;
+    border-color: #7CB342;
+    box-shadow: none;
+}
+
+
+/*task list*/
+
+.task-border {
+    border-left: 3px solid #689F38;
+}
+
+.bg-1 {
+    background-color: #DCEDC8;
+}
+
+.bg-2 {
+    background-color: #C5E1A5;
+}
+
+.bg-3 {
+    background-color: #DCEDC8;
+}
+
+.bg-4 {
+    background-color: #C5E1A5;
+}
+
+
+/*End of task list*/
+
+.bg-button {
+    background: #7CB342;
+}
+
+.bd-bottom {
+    border-bottom: 6px solid #689F38;
+}
+
+input.form-control {
+    color: white;
+}

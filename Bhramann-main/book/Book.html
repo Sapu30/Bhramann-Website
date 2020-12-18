@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Book your trip</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="book.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+    <link rel="stylesheet" href="bootstrap/css/font-awesome-5.8.1.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+</head>
+
+<body>
+
+
+    <div class="book">
+        <div class="room" style="height: 95%; width: 46%; margin-top:1% ;">
+            <a href="http://localhost/Bhramann-main/rooms/hotel.html"><i  class="close-btn fa fa-times" style="color:gray;"></a></i>
+            <div class="text">Book Your Trip </div>
+            <form action="book.php" method="POST">
+                <div class="val">
+                    <h2 style="font-size:16px">Name</h2>
+                    <input type="data" name="name" required>
+                </div><br>
+
+
+                <div class="val">
+                    <h2 style="font-size:16px">Email id</h2>
+                    <input type="data" name="email" required>
+                </div><br>
+
+                <div class="val">
+                    <h2 style="font-size:16px">Check-in Date</h2>
+                    <input type="date" name="check-in" id="check-in" required>
+                </div> <br>
+                <div class="val">
+                    <h2 style="font-size:16px">Check-out Date</h2>
+                    <input type="date" name="check-out" id="check-out" required>
+                </div>
+                <br>
+                <div class="val" style="display: block;">
+                    <h2> </h2>
+                    <select input type="text" style="width: 45%; height: 40px; float: left; margin-right:50%;font-size:15px" required name="adults">
+                               
+                    <option value="1">1 Adult</option>
+                    <option value="2">2 Adults</option>
+                    <option value="3">3 Adults</option>
+                </select>
+                    <h2> </h2>
+                    <select input type="text" name="children" style="width: 45%; height: 40px; float: right; margin-left:50%; margin-top:-6%;font-size:15px" required>
+                               
+                    <option value="0">No Children</option>
+                    <option value="1">1 Child</option>
+                    <option value="2">2 Children</option>
+                </select>
+                </div>
+
+                <div class="val">
+                    <h2 style="font-size:18px"> </h2>
+                    <select input type="text" name="room" style="width: 100%; height: 40px;font-size:15px" required>
+                               
+                    <option value="1">1 Room</option>
+                    <option value="2">2 Rooms</option>
+                    <option value="3">3 Rooms</option>
+                </select>
+                </div>
+                <div class="btns">
+                    <h2 style="font-size:20px"> </h2>
+                    <button type="submit">Book</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <div class="back">
+        <a href="http://localhost/Bhramann-main/">Back to home</a>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+body {
+    padding: 0%;
+    margin: 0%;
+    background-color: rgb(255, 255, 254);
+}
+
+@media screen and (min-width: 480px) {
+    body {
+        justify-content: space-around;
+    }
+}
+
+.main_page {
+    height: 100%;
+    width: 100%;
+    padding: 100px;
+}
+
+.main_card {
+    height: 320px;
+    width: 300px;
+    margin-left: 10px;
+    border-radius: 10px;
+    background-color: rgb(240, 235, 235);
+    box-shadow: rgb(235, 205, 205);
+    padding: 21px;
+    text-align: center;
+}
+
+.main_card:hover {
+    width: 270px;
+    height: 330px;
+    cursor: pointer;
+}
+
+.main_card img {
+    height: 200px;
+    width: 260px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.hotelName {
+    background-color: aliceblue;
+    font-weight: 700;
+}
+
+.check {
+    display: flex;
+    padding: 50px 20px;
+    justify-content: center;
+}
+
+button {
+    background-color: olivedrab;
+    font-weight: 200;
+    height: 0.75cm;
+    box-shadow: 20px;
+    font-optical-sizing: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+button:hover {
+    color: skyblue;
+    font-size: larger;
+}
+
+.nav {
+    height: 2.8cm;
+    width: 100%;
+    background-color: olivedrab;
+    color: white;
+    font-size: 1.5cm;
+    font-weight: 800;
+    text-shadow: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 23.5%;
+    padding-top: 10px;
+}
